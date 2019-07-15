@@ -1,0 +1,530 @@
+@import url(http://fonts.googleapis.com/css?family=Fenix);
+
+/* ************************************************************************** *\ 
+                                GLOBAL STYLES
+\* ************************************************************************** */
+
+
+body, html
+{
+	margin: 0px;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.jar
+{
+	height: 100%;
+	width: 100%;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+jar:after
+{
+	clear: both;
+}
+
+jar div.body
+{
+	word-wrap: break-word;
+	margin: 12px;
+}
+
+.top-most-bar
+{
+	background-color: #E2E761;
+	height: 8px;
+}
+
+.info
+{
+	display: none;
+	padding: 8px 0px;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000000;
+}
+
+.green
+{
+	background-color: #9CD9AC;
+}
+
+.red
+{
+	background-color: #F75050;
+}
+
+input, textarea
+{
+	padding: 4px;
+	margin: 2px 0px;
+	border-radius: 4px;
+	border: #B8B8B8 1px solid;
+	width: 100%;
+}
+
+textarea
+{
+	min-height: 6em;
+}
+
+.float-right
+{
+	display: inline-block;
+	float: right;
+}
+
+.float-left
+{
+	display: inline-block;
+	float: left;
+}
+
+.big-message
+{
+	padding: 18px;
+	text-align: center;
+	font-size: 2em;
+	color: #aaaaaa;
+}
+
+clear
+{
+	display: block;
+	clear: both;
+}
+
+.roomy-row
+{
+	margin: 0px 0px 8px;
+}
+
+
+/* ************************************************************************** *\ 
+                                  FORMS
+\* ************************************************************************** */
+
+
+input.gear-title
+{
+	font-size: 1.6em;
+}
+
+
+/* ************************************************************************** *\ 
+                           AUTO-COMPLETE STYLES
+\* ************************************************************************** */
+
+
+.autocomplete-suggestions
+{
+	border: 1px solid #999;
+	background: #FFF;
+	cursor: default;
+	overflow: auto;
+	-webkit-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64);
+	-moz-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64);
+	box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64);
+}
+
+.autocomplete-suggestion
+{
+	padding: 2px 5px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.autocomplete-selected
+{
+	background: #F0F0F0;
+}
+
+.autocomplete-suggestions strong
+{
+	font-weight: normal;
+	color: #3399FF;
+}
+
+input#add_notify_user
+{
+	width: 100%;
+}
+
+
+/* ************************************************************************** *\ 
+                               LOGIN STYLES
+\* ************************************************************************** */
+
+
+.login-box
+{
+	padding: 10px 48px;
+	margin: auto;
+	display: block;
+	width: 300px;
+	height: 360px;
+	margin-top: -180px;
+	border: #cccccc 1px solid;
+	top: 50%;
+	position: relative;
+}
+
+.login-box h2
+{
+	text-align: center;
+	font-weight: 200;
+}
+
+.login-box input
+{
+	padding: 8px 14px;
+	margin-bottom: 6px;
+}
+
+.login-box input#password
+{
+	margin-bottom: 18px;
+}
+
+.login-box input, .login-box button
+{
+	width: 200px;
+}
+
+.login-box .strikey
+{
+	text-align: center;
+	margin: 24px 0 24px 0;
+}
+
+.login-box .strikey::before {
+	left: 28px;
+	right: 57%;
+}
+
+.login-box .strikey::after {
+	right: 28px;
+	left: 54%;
+}
+
+.login-box .strikey::before, .login-box .strikey::after
+{
+	border-top: 1px solid rgba(0,0,0,0.1);
+	margin-top: 0.7em;
+	position: absolute;
+	content: '';
+	width: 36%;
+}
+
+
+/* ************************************************************************** *\ 
+                             NAVIGATION STYLES
+\* ************************************************************************** */
+
+
+.navbar-default {
+	background-color: #000000;
+	border-color: #e7e7e7;
+}
+
+.navbar-default .logo, .navbar-default .logo:hover
+{
+	font-family: 'Fenix', Helvetica, Arial, sans-serif;
+	font-size: 1.8em;
+	color: #B8B8B8;
+}
+
+.navbar-default .navbar-collapse
+{
+	padding-right: 10px;
+}
+
+.navbar-default .navbar-nav>li>a
+{
+	color: #999999;
+}
+
+.navbar-default .navbar-nav>li>a:hover
+{
+	/*text-decoration: underline;*/
+	color: #E2E761;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	color: #F1F1F1;
+	background-color: #414141;
+}
+
+
+/* ************************************************************************** *\ 
+                             CONTENT STYLES
+\* ************************************************************************** */
+
+
+.content
+{
+	margin-top: 60px;
+	padding: 12px;
+}
+
+.content jar
+{
+	border: #cccccc 1px solid;
+	/*
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	*/
+	display: block;
+}
+
+.content jar h2
+{
+	margin: 0;
+	padding: 6px 20px;
+	background-color: #E5F0F5;
+	background-color: #F8F8F8;
+	font-size: 1.5em;
+	font-weight: 200;
+	clear: both;
+}
+
+.content jar .entry
+{
+	display: block;
+	border: #cccccc 1px solid;
+	margin: 8px;
+	padding: 12px 16px;
+	border-radius: 4px;
+	text-decoration: none;
+	color: #428bca;
+}
+
+.content jar .entry:hover
+{
+	background-color: #f6f6f6;
+}
+
+.content jar .entry .icon
+{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+
+.content jar .entry .float-right
+{
+	line-height: 32px;
+}
+
+.content jar .sortable li .edit
+{
+	display: block;
+	position: absolute;
+	right: 5px;
+	top: 4px;
+}
+
+.content jar div#link-popper
+{
+	display: block;
+	top: 50%;
+	left: 50%;
+	margin-top: -45px;
+	margin-left: -95px;
+}
+
+/* ************************************************************************** *\ 
+                              SORTABLE LISTS
+\* ************************************************************************** */
+
+
+.handle
+{
+	cursor: move;
+}
+		
+.sortable, .sortable.connected
+{
+	width: 100%;
+	min-height: 100px;
+	float: left;
+	padding: 8px;
+}
+
+.sortable li
+{
+	display: block;
+	list-style: none;
+	border: 1px solid #CCC;
+	background: #F6F6F6;
+	color: #1C94C4;
+	margin: 5px;
+	padding: 5px;
+	height: 2em;
+	line-height: 1.4em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	position: relative;
+}
+
+.sortable li.sortable-placeholder
+{
+	border: #CCC 1px dashed;
+	background-color: transparent;
+}
+
+.sortable
+{
+	/*background-color: rgba(248,248,248,1);*/
+	border: #cccccc 1px double;
+}
+
+#sections-used:before
+{
+	content: 'Used Sections';
+	text-align: center;
+	display: block;
+	border-bottom: #dddddd 1px solid;
+}
+
+#sections-available:before
+{
+	content: 'Available Sections';
+	text-align: center;
+	display: block;
+	border-bottom: #dddddd 1px solid;
+}
+
+#menu-list:before
+{
+	content: 'Menu Options';
+	text-align: center;
+	display: block;
+	border-bottom: #dddddd 1px solid;
+}
+
+/* ************************************************************************** *\ 
+                             ADMIN MENU STYLES
+\* ************************************************************************** */
+
+
+/*jar#menu-edit .sortable li
+{
+	height: 2em;
+}*/
+
+jar#menu-edit .sortable li input[type=text]
+{
+	width: 90%;
+	border: none;
+	background: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* ************************************************************************** *\ 
+                                  ICONS
+\* ************************************************************************** */
+
+
+jar .entry .icon
+{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+
+jar .entry .icon-section
+{
+	background-image: url('../images/icon-blocks.png');
+}
+
+jar .entry .icon-page
+{
+	background-image: url('../images/icon-page.png');
+}
+
+/*.icon-external-link:before
+{
+	margin-top: 2px;
+}*/
+
+
+/* ************************************************************************** *\ 
+                                SUMMERNOTE
+\* ************************************************************************** */
+
+.item-collection
+{
+	display: inline-block;
+	float: left;
+}
+
+.item-collection:before
+{
+	clear: left;
+}
+
+.item-collection img
+{
+	width: 100%;
+	height: auto;
+}
+
+.item-collection.w1
+{
+	width: 100%
+}
+
+.item-collection.w2
+{
+	width: 50%
+}
+
+.item-collection.w3
+{
+	width: 33.3%
+}
+
+.item-collection.w3-2
+{
+	width: 66.6%
+}
+
+.item-collection.w4
+{
+	width: 25%
+}
+
+
+
+
+/* ************************************************************************** *\ 
+                                SUMMERNOTE
+\* ************************************************************************** */
+
+
+.CodeMirror-linenumber
+{
+	padding: 0;
+}
+
+
+/* ************************************************************************** *\ 
+                                  FONTS
+\* ************************************************************************** */
+
+@font-face
+{
+font-family: champagne;
+src: url('../fonts/Champagne-Limousines.html');
+}
+
