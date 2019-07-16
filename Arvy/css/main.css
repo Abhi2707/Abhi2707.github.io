@@ -220,7 +220,7 @@ ul {
 
 h1.fittext {
 	margin-bottom: 10px;
-	font-size: 100px;
+	font-size: 90px;
 	font-weight: 700;
 	line-height: 100%;
 }
@@ -234,7 +234,7 @@ h1.hugetext {
 }
 
 p.uppercase {
-	font-size: 16px;
+	font-size: 20px;
 	margin-bottom: 0;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
@@ -1179,7 +1179,7 @@ a i:hover {
 .services {
 	padding-top: 60px;
 	padding-bottom: 80px;
-	background: #f7f7f7;
+	background-image: url('images/service.jpg');
 }
 
 /* Services slider */
