@@ -29,6 +29,7 @@ jar div.body
 {
 	word-wrap: break-word;
 	margin: 12px;
+	background-color: #000000;
 }
 
 .top-most-bar
