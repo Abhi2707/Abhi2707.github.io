@@ -674,7 +674,7 @@ img {
 .header-center1 {
 	position: absolute;
 	left: 50%;
-	top: 70%;
+	top: 75%;
 	-webkit-transform: translate(-50%, -50%);
 		-ms-transform: translate(-50%, -50%);
 			transform: translate(-50%, -50%);
@@ -684,7 +684,7 @@ img {
 .header-top {
 	position: absolute;
 	left: 50%;
-	top: 25%;
+	top: 30%;
 	-webkit-transform: translate(-50%, -50%);
 		-ms-transform: translate(-50%, -50%);
 			transform: translate(-50%, -50%);
@@ -2479,7 +2479,7 @@ text-transform: uppercase;
 letter-spacing: .35em;
 font-size: 1.35em;
 color: #ffffff;
-margin-top: 6px;
+margin-top: 1px;
 }
 
 #header .gjlogo a:hover {
