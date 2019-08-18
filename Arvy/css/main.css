@@ -649,6 +649,7 @@ img {
 	background-color: #000000;
         top: 0px;
         z-index: 100;
+
 }
 
 .header-inherited {
@@ -2477,9 +2478,10 @@ article .container {
 font-family: Fenix;
 text-transform: uppercase;
 letter-spacing: .35em;
-font-size: 1.35em;
+
 color: #ffffff;
 margin-top: 1px;
+
 }
 
 #header .gjlogo a:hover {
