@@ -34,7 +34,6 @@
 				if($target.offset() == undefined) return;
 
 				$('html, body').stop().animate({
-					'scrollTop': $target.offset().top-0
 				}, 900, 'swing').promise().done(function(){
 					if($('body').hasClass('auto-close-menu') && $('.menu-open').length > 0){
 						$('#menuToggle, #menuToggleLeft').click();
@@ -43,6 +42,17 @@
 				});
 			});
 
+			$(document).click(function(e) 
+			{
+				var container = $("#theMenu");
+			
+				// if the target of the click isn't the container nor a descendant of the container
+				if (!container.is(e.target) && container.has(e.target).length === 0 && $('.menu-open').length > 0) 
+				{
+					$('#menuToggle, #menuToggleLeft').click();
+				}
+			});
+			
 			// Menu settings default
 			$('#menuToggle, .menu-close').on('click', function(){
 				$('#menuToggle').toggleClass('active');
