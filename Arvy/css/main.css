@@ -2368,6 +2368,12 @@ p.next-project span:hover {
 		line-height: 100%;
 
 	}
+	h1.uppercase {
+		font-size: 18px;
+		margin-bottom: 0;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+	}
 }
 
 
