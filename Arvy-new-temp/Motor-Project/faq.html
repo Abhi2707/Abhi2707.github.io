@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title></title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/modern-business.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/faq.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+       
+       $('#nav').load("navigation.html");
+    
+    });
+    </script>
+    
+
+  </head>
+
+  <body style="background-image: url('car.png'); background-size: cover;">
+
+    <!-- Navigation -->
+   
+    <div class="container-fluid" id="nav">
+    </div>
+    
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Page Heading/Breadcrumbs -->
+      <h1 class="mt-4 mb-3" style="color: white;">Frequently Asked Question
+        
+      </h1>
+
+      <ol class="breadcrumb" style="background-color: transparent;">
+        <li class="breadcrumb-item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="breadcrumb-item active">FAQ</li>
+      </ol>
+
+     
+
+      <p class="accordion">Q1. What business we do? How can I purchase your bikes?</p>
+      <div class="panel">A1. Depending on your goals, budget and needs, we will consult with you to build your dream-bike.
+          You can also purchase from our inventory of bikes that were built for make to stock. You can contact us at info@arvymotorcycle.com or mobile number provided.
+      </div>
+      <p class="accordion">Q2. Are your bikes street legal?</p>
+      <div class="panel">A2. It depends on the state you live as we deliver bikes all over India with proper invoicing/billing.
+      </div>
+      <p class="accordion">Q3. Does your hand built bike come with a warranty?</p>
+      <div class="panel">A3. We provide warranty on paint & customized parts. We only customize verified bikes having all required documents, service record and prefer least aged models or provided by you.
+  
+          We stand by our work & your satisfactions is our greatest asset to grow our business brand. We maintain quality standard & check point at each process of built
+      </div>
+      <p class="accordion">Q4. How much our bikes cost?</p>
+      <div class="panel">A4. It depends upon the agreed designs and once the design of bike is finalized – deposit of half with due remain of agreed cost to be paid upon completion & pre dispatch inspection or mutual agreed term.
+      </div>
+      <p class="accordion">Q5. For customization what you have to do?</p>
+      <div class="panel">A5. Either you provide your own bike with all necessary documents like registration copy, driving license, pollution certificate, insurance etc. or you can authorize us to purchase the bike as per our policy and your interest.
+      </div>
+    <!-- Footer -->
+    <style>
+      body {font-family: Arial, Helvetica, sans-serif;}
+      * {box-sizing: border-box;}
+      
+      /* Button used to open the contact form - fixed at the bottom of the page */
+      .open-button {
+        background-color:red;
+        color: white;
+        font-size: 15px;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        opacity: 0.8;
+        position: fixed;
+        bottom: 20px;
+        right: 28px;
+        border: 1px solid white;
+        width: 220px;
+      }
+      
+      /* The popup form - hidden by default */
+      .form-popup {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        right: 15px;
+        border: 1px solid black;
+        z-index: 8;
+      }
+      
+      /* Add styles to the form container */
+      .form-container {
+        max-width: 500px;
+        padding: 10px;
+        background-color: black;
+      }
+      
+      /* Full-width input fields */
+      .form-container input[type=text], .form-container input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 20px 0;
+        border: none;
+        background: #212121;
+        color: white;
+      }
+      
+      /* When the inputs get focus, do something */
+      .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+        background-color:#212121;
+        outline: none;
+      }
+      
+      /* Set a style for the submit/login button */
+      .form-container .btn {
+        background-color: rgba(10, 11, 12, 0.829);
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom:10px;
+        opacity: 0.8;
+      }
+      
+      /* Add a red background color to the cancel button */
+      .form-container .cancel {
+        background-color: red;
+      }
+      
+      /* Add some hover effects to buttons */
+      .form-container .btn:hover, .open-button:hover {
+        opacity: 1;
+      }
+      </style>
+      </head>
+      <body>
+      
+      
+      
+      <button class="open-button uppercase" onclick="openForm()">Connect</button>
+      
+      <div class="form-popup" id="myForm">
+        <form action="#" class="form-container">
+          <h1 class="uppercase query">Send us your query</h1>
+      
+          
+          <input type="text" placeholder=" Full Name" name="email" required>
+          
+          <input type="text" placeholder=" Email" name="email" required>
+          <input type="text" placeholder=" Phone Number" name="psw" required>
+          <input type="text" placeholder="Message" name="psw" style="height: 100px;" required>
+      
+          <button type="submit" class="btn">Submit</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+      </div>
+      
+      <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+      
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+      </script>
+ 
+  
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/bootstrap/js/faq.js"></script>
+
+  </body>
+
+</html>
