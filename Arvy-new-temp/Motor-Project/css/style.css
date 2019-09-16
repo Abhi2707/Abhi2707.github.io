@@ -95,3 +95,105 @@ h1.fittext1 {
   font-weight: 200;
   color: white;
 }
+.stunning_text {
+	margin: 0 0 40px;
+}
+.stunning_text p {
+	margin: 30px auto 0;
+	color: #858585;
+	font-size: 13px;
+	line-height: 21px;
+	text-align:center
+}
+.stunning_text h4 {
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-family: "museo_sans_500", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	line-height: 20px;
+	margin: 22px auto 0;
+	overflow: hidden;
+	color: #666;
+	font-weight: 500;
+}
+.stunning_text h4.first-title {
+	margin: 0 auto 20px
+}
+.stunning_text h4 span {
+	padding: 0 15px;
+	display: inline-block;
+	position: relative;
+}
+.stunning_text h4.first-title span:before,
+.stunning_text h4.last-title span:before {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	height: 1px;
+	width: 350px;
+	left: -350px;
+	top: 50%;
+	background: #ddd;
+	margin-top: -1px
+}
+.stunning_text h4.first-title span:after,
+.stunning_text h4.last-title span:after {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	height: 1px;
+	width: 350px;
+	right: -350px;
+	top: 50%;
+	background: #ddd;
+	margin-top: -1px
+}
+.stunning_text .big-title {
+	text-align: center;
+	display: block;
+	clear: both
+}
+.stunning_text .big-title > div {
+	display: inline-block;
+	overflow: hidden;
+}
+.stunning_text .big-title > div > span {
+	display: inline-block;
+	font-size: 29px;
+	line-height: 110%;
+	margin: 0;
+	color: #555;
+	letter-spacing: 3px;
+	font-family: "museo_sans_500", "Lucida Sans Unicode", "Lucida Grande", sans-serif!important;
+	text-transform: uppercase;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased!important;
+}
+.stunning_text .big-title.extra-large-text > div > span {
+	font-size: 2em;
+	font-family: "museo_sans_500 A", "Lucida Sans Unicode", "Lucida Grande", sans-serif!important;
+	color: #555;
+	letter-spacing: 4px
+}
+.stunning_text.style2 h4.first-title {
+	max-width: 90%
+}
+.stunning_text.style2 .big-title > div > span {
+	padding-bottom: 30px;
+	position: relative
+}
+.stunning_text.style2 .big-title > div > span:after {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	bottom: 0;
+	left: 0;
+	height: 1px;
+	width: 90%;
+	margin-left: 5%;
+	background: #ddd;
+}
+.stunning_text.style2 p {
+	margin-top: 30px
+}
