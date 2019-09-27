@@ -36,8 +36,8 @@
             -webkit-transform: scale(1.0);
         }
            100% {
-            transform: scale(1.2);
-            -webkit-transform: scale(1.2);
+            transform: scale(0.5);
+            -webkit-transform: scale(0.5);
         }
 }
 
@@ -47,8 +47,8 @@
             -webkit-transform: scale(1.0);
         }
            100% {
-            transform: scale(1.2);
-            -webkit-transform: scale(1.2);
+            transform: scale(0.5);
+            -webkit-transform: scale(0.5);
         }
 
 
@@ -196,4 +196,16 @@ h1.fittext1 {
 }
 .stunning_text.style2 p {
 	margin-top: 30px
+}
+
+.link{
+	color: red;
+}
+
+.try{
+	width: 80%;
+	height: 80%;
+	border: 1px solid dotted;
+	color: #ddd;
+	margin: auto;
 }
