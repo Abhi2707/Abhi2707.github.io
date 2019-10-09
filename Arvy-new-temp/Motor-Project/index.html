@@ -96,7 +96,7 @@ $(document).ready(function(){
 
  h1.fittext {
   margin-bottom: 10px;
-  font-size: 90px;
+  font-size: 82px;
   font-weight: 700;
   line-height: 100%;
 }
@@ -105,7 +105,7 @@ $(document).ready(function(){
 	h1.fittext {
 		margin-bottom: 10px;
 		font-weight: 500;
-    font-size: 30px;
+    font-size: 40px;
     margin-top: 0%;
 		
 	  }
@@ -124,13 +124,41 @@ $(document).ready(function(){
 
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    margin-bottom: 10px;
   }
 
   .uppercase {
 
     letter-spacing: 0.1em;
     text-transform: uppercase;
+  
   }
+  h4.uppercase{
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  
+  }
+  
+  @media only screen and (max-width: 600px) {
+	h4.uppercase {
+		margin-bottom: 10px;
+		font-weight: 500;
+    font-size: 18px;
+    margin-top: 0%;
+		
+	  }
+  }
+
+  @media only screen and (max-width: 600px) {
+	.uppercase {
+		margin-bottom: 10px;
+		font-weight: 500;
+    font-size: 22px;
+    margin-top: 0%;
+		
+	  }
+  }
+
 
 
 .vision{
@@ -271,27 +299,28 @@ $(document).ready(function(){
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner" role="listbox" style="height:600px;">
-            <div class="carousel-item" style="background-image: url('slide3.jpg');height: 622px">
+            <div class="carousel-item" style="background-image: url('slide3.jpg');height:100%;">
       
             <div class="vision3  d-md-block">
               <h1 class="uppercase" style="font-size: 6vw;">Get Your Bike Ready!</h1>
               <h3 class="uppercase" style="margin: 20px; color:red; font-weight:500">We deliver a hand-built /customized motorcycle across India.</h3>
-              <h2 class="uppercase">Shape your Dream</h2>
+              
               <h3 class="uppercase">Contact Us</h3>
             </div>
           </div>
           <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="height: 622px; margin: auto; background-image: url('slide4.jpg');">
+          <div class="carousel-item active" style="height:100%; margin: auto; background-image: url('slide4.jpg');">
                            <center><div class="logo"></div></center>
             
-            <div class="Arvytext vision d-md-block">
+            <div class="Arvytext vision d-md-block" style="padding-bottom: 10px;padding-top:10px;">
               <h1 class="fittext uppercase">Arvy Motorcycle</h1>
-              <h2 class="subheading uppercase">Bike custom organization</h2>
+              <h2 class="uppercase">Shape your Dream</h2>
+              <h4 class="uppercase">Hand-built /Custom Motorcycle Company</h4>
               
             </div>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('mision.jpg');height: 622px">
+          <div class="carousel-item" style="background-image: url('mision.jpg');height:100%;">
             <div class="vision2  d-md-block">
                  <h1 class=" vistext1 uppercase white" style="color: red;">
           Vision
