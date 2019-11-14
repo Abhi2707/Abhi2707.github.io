@@ -430,11 +430,35 @@ $(document).ready(function(){
     .form-container .btn:hover, .open-button:hover {
       opacity: 1;
     }
+    .spinner-wrapper {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #000000;
+
+z-index: 999999;
+}
+.spinner {
+  width: 80%;
+  height: 10%;
+
+  margin: auto;
+  margin-top: 10%;
+
+
+ 
+}
+    
       </style>
       </head>
       <body>
       
-      
+      <!--CSS Spinner-->
+<div class="spinner-wrapper">
+  <div class="spinner"><img src="logo.png"></div>
+  </div>
       
       <button class="open-button uppercase" onclick="openForm()">Connect</button>
       
@@ -482,7 +506,21 @@ $(document).ready(function(){
           $('#footer').load( 'footer.html' );
       });
     </script>
+
 <!-- Footer -->
+<script>
+  $(document).ready(function() {
+  //Preloader
+  $(window).on("load", function() {
+  preloaderFadeOutTime = 4000;
+  function hidePreloader() {
+  var preloader = $('.spinner-wrapper');
+  preloader.hide(preloaderFadeOutTime);
+  }
+  hidePreloader();
+  });
+  });
+  </script>
 
   </body>
 

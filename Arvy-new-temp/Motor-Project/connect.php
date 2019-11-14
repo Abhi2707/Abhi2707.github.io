@@ -82,7 +82,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <button class="open-button" onclick="openForm()">Open Form</button>
 
 <div class="form-popup" id="myForm">
-  <form action="#" class="form-container">
+  <form action="connect_new.php"  class="form-container" method="POST">
     <h1>Login</h1>
 
     <label for="email"><b>Email</b></label>
@@ -105,6 +105,48 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 </script>
+<?php
+
+
+$serverName="arvymotorcycle.com";
+$userName="arvymghq";
+$password="Ronaldo277@@";
+$db="arvymghq_contact";
+
+
+$conn=mysqli_connect($serverName,$userName,$password,$db);
+if($conn == true){
+  echo '<script type="text/javascript">alert("You have successfully registered for the Workshop")</script>';
+  
+}
+
+ extract($_POST);  
+ $name =$_POST['name'];
+ $email =$_POST['email'];
+ $phone =$_POST['phonenumber'];
+ $message =$_POST['messagetext'];
+ 
+ 
+ if(isset($submit)){
+
+     $SQL="INSERT INTO Users(full_name, email, phone_number , messagetxt) VALUES('$name','$email','$phone','$message')";
+
+        
+     $temp=mysqli_query($conn,$SQL);
+     
+
+
+      
+     if($temp > 0){
+       echo '<script type="text/javascript">alert("You have successfully registered for the Workshop")</script>';
+       
+    }
+     else{
+       echo '<script type="text/javascript">alert("Something Went Wrong")</script>';
+   }
+}
+
+?>
 
 </body>
 </html>
